@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <EditText
+        android:id="@+id/userNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="userName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/userSex"
+        app:layout_constraintStart_toStartOf="@+id/userSex"
+        app:layout_constraintTop_toBottomOf="@+id/userSex" />
+
+    <EditText
+        android:id="@+id/userNameAgeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/userNameInput"
+        app:layout_constraintStart_toStartOf="@+id/userNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/userNameInput" />
+
+    <EditText
+        android:id="@+id/userNameSexInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Sex"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/userNameAgeInput"
+        app:layout_constraintStart_toStartOf="@+id/userNameAgeInput"
+        app:layout_constraintTop_toBottomOf="@+id/userNameAgeInput" />
+
+    <Button
+        android:id="@+id/updateUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="SAVE_CHANGES"
+        app:layout_constraintEnd_toEndOf="@+id/userNameSexInput"
+        app:layout_constraintStart_toStartOf="@+id/userNameSexInput"
+        app:layout_constraintTop_toBottomOf="@+id/userNameSexInput" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="userName" />
+
+    <TextView
+        android:id="@+id/userAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
+        tools:text="Age" />
+
+    <TextView
+        android:id="@+id/userSex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/userAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userAge"
+        app:layout_constraintTop_toBottomOf="@+id/userAge"
+        tools:text="Sex" />
+</androidx.constraintlayout.widget.ConstraintLayout>
