@@ -11,9 +11,7 @@ import com.neo.roomrxjava.database.model.User;
 
 @Database(entities = {User.class}, version = 1)
 public abstract class UsersDatabase extends RoomDatabase {
-
     private static volatile UsersDatabase INSTANCE;
-
     // to access dao obj
     public abstract UserDao mUserDao();
 
